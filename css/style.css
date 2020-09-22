@@ -669,6 +669,8 @@ img {
   padding: 28px;
   background-color: #0A223D;
   color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
 
 .booking__info {
@@ -782,6 +784,7 @@ img {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  font-family: 'Nunito', sans-serif;
 }
 
 .map {
