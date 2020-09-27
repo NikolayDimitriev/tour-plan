@@ -26,3 +26,7 @@ document.addEventListener('keyup', e => {
         hotelSlider.slideNext();
     }
 });
+
+$('.parallax-window').parallax({
+    imageSrc: './img/newsletter/newsletter-bg.jpg'
+});
