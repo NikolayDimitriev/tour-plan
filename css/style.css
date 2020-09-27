@@ -1217,14 +1217,14 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    max-width: 92%;
+    max-width: 93%;
   }
   .navbar-menu, .navbar__search, .navbar__user {
     display: none;
   }
   .menu-button {
     width: 16px;
-    height: 11px;
+    height: 13px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1340,6 +1340,12 @@ img {
 }
 
 @media (max-width: 576px) {
+  .navbar-top {
+    margin-right: 18px;
+  }
+  .navbar-top__menu-button {
+    margin-top: 2px;
+  }
   .logo {
     width: 99px;
   }
