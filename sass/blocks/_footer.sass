@@ -9,6 +9,11 @@
         grid-gap: 20px
         grid-auto-rows: minmax(40px, min-content)
         align-items: start
+        padding-bottom: 95px
+    &-bottom
+        display: grid
+        grid-template-columns: repeat(3, minmax(min-content, 1fr))
+        align-items: end
     &__logo
         grid-row: 1 / 3
         width: 166px
@@ -39,6 +44,19 @@
         padding: 0
         margin: 0
         list-style: none
+        &--horizontal
+            grid-column: 2
+            display: flex
+            justify-content: space-between
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $light
+    &__image
+        grid-column: 3
+        display: flex
+        justify-content: flex-end
     &__title
         margin: 0
         margin-bottom: 16px
@@ -108,3 +126,4 @@
         font-size: 12px
         line-height: 15px
         color: $footer-info-color
+

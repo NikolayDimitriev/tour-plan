@@ -10,6 +10,9 @@
     .card
         width: 230px
         height: 230px
+    .footer
+        &__input
+            flex-basis: 100%
 @media (max-width: 992px)
     .container, 
     .newsletter-wrapper
@@ -67,6 +70,41 @@
     .card
         width: 340px
         height: 255px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6,1fr)
+            grid-row-gap: 40px
+        &-bottom
+            grid-template-columns: repeat(2, minmax(min-content, 1fr))
+        &__ul
+            &--horizontal
+                grid-column: 1
+        &__image
+            grid-column: 2
+        &__input
+            flex-basis: 49%
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__additional
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-column: span 5
+                grid-row: 3
+            &-form
+                grid-column: span 5
+                grid-row: 4
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -96,6 +134,7 @@
             flex-basis: 100%
         &-wrapper
             justify-content: space-between
+            padding-bottom: 63px
         &-info
             &__name
                 margin-top: 10px
@@ -148,6 +187,20 @@
             max-width: 700px
     .card
         max-width: 339px
+    .footer
+        &__input
+            flex-basis: 100%
+        &-bottom
+            grid-template-columns: 1fr
+        &__ul
+            &--horizontal
+                grid-column: 1
+                grid-row: 1
+                margin-bottom: 10px
+        &__image
+            grid-column: 1
+            grid-row: 2
+            justify-content: start
 @media (max-width: 576px)
     .navbar
         &-top
@@ -206,6 +259,38 @@
             line-height: 23px
     .star
         margin-right: 2px
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+            padding-bottom: 30px
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        &__info
+            width: 100%
+            margin-bottom: 15px
+        &__button
+            order: 1
 @media (max-width: 480px) 
     .hotel
         padding-right: 20px
