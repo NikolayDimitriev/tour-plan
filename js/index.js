@@ -26,3 +26,9 @@ document.addEventListener('keyup', e => {
         hotelSlider.slideNext();
     }
 });
+
+// Открытие меню
+const menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', () => {
+    document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_visible');
+});
