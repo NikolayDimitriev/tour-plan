@@ -10,6 +10,16 @@
     .card
         width: 230px
         height: 230px
+    .packages
+        &-container
+            max-width: 760px
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(3, min-content)
+        &__item
+            &_one
+                grid-column: span 2
+                grid-row: 1
     .footer
         &__input
             flex-basis: 100%
