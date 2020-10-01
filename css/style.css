@@ -394,7 +394,6 @@ button {
 
 .navbar-bottom {
   background-color: #0A223D;
-  overflow-y: scroll;
 }
 
 .navbar-menu {
@@ -1622,6 +1621,7 @@ button {
     right: 0;
     top: 78px;
     padding-top: 30px;
+    overflow-y: scroll;
   }
   .navbar-bottom_visible {
     display: block;
