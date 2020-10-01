@@ -1388,6 +1388,7 @@ button {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  outline: 0;
 }
 
 .footer__button {
