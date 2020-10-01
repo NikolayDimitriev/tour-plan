@@ -1610,6 +1610,9 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .navbar__search_mobile_visible {
+    margin-left: 0;
+  }
   .navbar-bottom {
     display: none;
     position: fixed;
@@ -1994,6 +1997,10 @@ button {
 }
 
 @media (max-width: 480px) {
+  .navbar__search_mobile_visible {
+    width: 245px;
+    margin-left: 0;
+  }
   .hotel {
     padding-right: 20px;
     padding-bottom: 37px;
