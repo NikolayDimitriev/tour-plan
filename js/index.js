@@ -10,6 +10,7 @@ const hotelSlider = new Swiper('.hotel-slider', {
 const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
+    autoHeight: true,
     // Navigation arrows
     navigation: {
         nextEl: '.reviews-slider__button--next',
