@@ -455,6 +455,7 @@ button {
   height: 100%;
   border: none;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .user {
@@ -520,6 +521,10 @@ button {
   padding-bottom: 69px;
 }
 
+.hotel-thank {
+  padding-bottom: 20px;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +553,21 @@ button {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
+}
+
+.hotel-info__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  margin-top: 10px;
+  background-color: #ec1f46;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .hotel-name {
@@ -1119,6 +1139,7 @@ button {
   border: none;
   background-color: #ec1f46;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reviews {
