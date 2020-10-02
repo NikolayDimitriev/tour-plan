@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const reviewsSlider = new Swiper('.reviews-slider', {
         // Optional parameters
         loop: true,
-        autoHeight: true,
         // Navigation arrows
         navigation: {
             nextEl: '.reviews-slider__button--next',
@@ -37,12 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
     modalButton.forEach(function (item) {
         item.addEventListener('click', function () {
             modal.classList.add('modal--visible');
+            document.body.classList.add('modal--open');
         });
     });
 
     closeModalButton.addEventListener('click', function (e) {
         e.preventDefault();
         modal.classList.remove('modal--visible');
+        document.body.classList.remove('modal--open');
     });
 
     modal.addEventListener('click', function (e) {
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (target.closest('.modal__overlay')) {
             modal.classList.remove('modal--visible');
+            document.body.classList.remove('modal--open');
         }
     });
 
@@ -61,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hotelSlider.slideNext();
         } else if (e.keyCode === 27) {
             modal.classList.remove('modal--visible');
+            document.body.classList.remove('modal--open');
         }
     });
 

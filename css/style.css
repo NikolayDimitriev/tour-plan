@@ -389,6 +389,10 @@ button {
   min-height: 50px;
 }
 
+.modal--open {
+  overflow-y: hidden;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1684,6 +1688,8 @@ button {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 .modal__close {
