@@ -1688,7 +1688,7 @@ button {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
-  max-height: 100%;
+  max-height: calc(100% - 30px);
   overflow-y: auto;
 }
 
@@ -2345,6 +2345,9 @@ button {
   .hotel {
     padding-right: 20px;
     padding-bottom: 37px;
+  }
+  .hotel-wrapper {
+    padding-bottom: 0;
   }
   .hotel-slider {
     height: 180px;
