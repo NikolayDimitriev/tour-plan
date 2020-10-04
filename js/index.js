@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+    // Инициализация слайдера в блоке packages
+    const packagesSlider = new Swiper('.packages-slider', {
+        // Optional parameters
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.packages-slider__button--next',
+            prevEl: '.packages-slider__button--prev',
+        },
+    });
+
     // Инициализация слайдера в блоке reviews
     const reviewsSlider = new Swiper('.reviews-slider', {
         // Optional parameters

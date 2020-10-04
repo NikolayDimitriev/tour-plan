@@ -861,9 +861,21 @@ button {
 }
 
 .packages {
-  display: none;
   padding-top: 40px;
   padding-bottom: 70px;
+}
+
+.packages-container_slider {
+  display: none;
+}
+
+.packages-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .packages-wrapper {
@@ -914,6 +926,14 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.packages__item_slide-one {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
 }
 
 .packages__photo {
@@ -967,6 +987,10 @@ button {
 }
 
 .packages__room_mb {
+  margin-bottom: 24px;
+}
+
+.packages__room_slide-one {
   margin-bottom: 24px;
 }
 
@@ -1039,6 +1063,36 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+}
+
+.packages-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.packages-slider__button--prev {
+  background-image: url(../img/reviews/arrow-prev-secondary.svg);
+  left: 0;
+}
+
+.packages-slider__button--next {
+  background-image: url(../img/reviews/arrow-next-secondary.svg);
+  right: 0;
+}
+
+.packages__image_slide-one {
+  border-radius: 8px 8px 0 0;
 }
 
 .flash-offer {
@@ -1777,7 +1831,7 @@ button {
     height: 230px;
   }
   .packages-container {
-    max-width: 760px;
+    max-width: 730px;
   }
   .packages-wrapper {
     -ms-grid-columns: (1fr)[2];
@@ -2183,6 +2237,12 @@ button {
     max-width: 350px;
     padding: 10px 20px;
   }
+  .packages-container {
+    display: none;
+  }
+  .packages-container_slider {
+    display: block;
+  }
 }
 
 @media (max-width: 698px) {
@@ -2367,6 +2427,27 @@ button {
   }
   .map {
     height: 173px;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+  .packages__item {
+    height: 430px;
+  }
+  .packages__info {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+  }
+  .flash-offer {
+    width: 95px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
   .newsletter {
     height: 319px;
