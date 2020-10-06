@@ -1554,6 +1554,11 @@ button {
   margin-left: 3px;
 }
 
+.footer__contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
