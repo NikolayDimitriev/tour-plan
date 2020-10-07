@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // Обработка формы в newsletter
     $('.form-email').validate({
         errorClass: "email-invalid",
         errorElement: "em",
@@ -108,8 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Маска для всех телефонов
     $('.phone-number').each(function () {
         $(this).mask('+7 (000) 000-00-00');
     });
 
+    // инициализация анимаций
+    AOS.init();
 });
