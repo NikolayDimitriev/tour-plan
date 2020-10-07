@@ -393,6 +393,12 @@ button {
   overflow-y: hidden;
 }
 
+.invalid {
+  color: #ec1f46;
+  border-bottom: 1px solid #ec1f46;
+  font-size: 15px;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1682,13 +1688,17 @@ button {
 .footer__input {
   padding: 0 23px;
   height: 50px;
-  margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__input-group {
+  margin-bottom: 15px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .footer__message {
@@ -1779,12 +1789,11 @@ button {
   line-height: 23px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
   text-align: center;
 }
 
 .modal__input {
-  margin-bottom: 15px;
+  margin-top: 15px;
   width: 100%;
   padding-top: 18px;
   padding-bottom: 17px;
@@ -1799,11 +1808,12 @@ button {
   width: 100%;
   padding-left: 23px;
   padding-top: 18px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   min-width: 123px;
 }
 
 .modal__button {
+  margin-top: 15px;
   padding-top: 18px;
   padding-bottom: 17px;
   font-style: normal;
@@ -1850,7 +1860,7 @@ button {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2016,7 +2026,7 @@ button {
   .footer__title--details {
     margin-bottom: 23px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2251,7 +2261,7 @@ button {
 }
 
 @media (max-width: 698px) {
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

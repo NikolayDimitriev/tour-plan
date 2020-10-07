@@ -78,4 +78,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Обработка формы
+    $('.form').each(function () {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Please specify your name",
+                    minlength: "The name must be at least two letters"
+                },
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
+                },
+                phone: {
+                    required: "We need your phone to contact you",
+                }
+            }
+        });
+    });
+
+    $('.phone-number').each(function () {
+        $(this).mask('+7 (000) 000-00-00');
+    });
+
 });
