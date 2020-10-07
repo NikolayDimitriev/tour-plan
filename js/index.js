@@ -97,6 +97,16 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+    $('.form-email').validate({
+        errorClass: "email-invalid",
+        errorElement: "em",
+        messages: {
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+        }
+    });
 
     $('.phone-number').each(function () {
         $(this).mask('+7 (000) 000-00-00');
