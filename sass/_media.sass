@@ -21,9 +21,8 @@
                 grid-column: span 2
                 grid-row: 1
     .footer
-        &__input
-            &-group
-                flex-basis: 100%
+        &-block
+            flex-direction: column
 @media (max-width: 992px)
     .container,
     .newsletter-wrapper
@@ -156,6 +155,8 @@
         &-bottom
             grid-template-columns: repeat(8, 1fr)
             grid-template-rows: 1
+        &-block
+            flex-direction: row
     .modal
         &__dialog
             max-width: 400px
@@ -299,9 +300,8 @@
                 display: block
 @media (max-width: 698px)
     .footer
-        &__input
-            &-group
-                flex-basis: 100%
+        &-block
+            flex-direction: column
 @media (max-width: 576px)
     .navbar
         &-top
