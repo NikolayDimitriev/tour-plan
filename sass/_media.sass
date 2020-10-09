@@ -21,6 +21,9 @@
                 grid-column: span 2
                 grid-row: 1
     .footer
+        &__input
+            &-group
+                flex-basis: 100%
         &-block
             flex-direction: column
 @media (max-width: 992px)
@@ -82,6 +85,9 @@
     .card
         width: 340px
         height: 255px
+        &__title
+            &_two
+                max-width: 155px
     .footer
         padding-top: 43px
         &-wrapper
@@ -155,6 +161,9 @@
             grid-template-rows: 1
         &-block
             flex-direction: row
+        &__input
+            &-group
+                flex-basis: 48%
     .modal
         &__dialog
             max-width: 400px
@@ -302,6 +311,9 @@
     .footer
         &-block
             flex-direction: column
+        &__input
+            &-group
+                flex-basis: 100%
 @media (max-width: 576px)
     .navbar
         &-top

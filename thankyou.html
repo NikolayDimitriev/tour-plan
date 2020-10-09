@@ -9,11 +9,8 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-        rel="preload">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        rel="preload" as="font">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/swiper-bundle.min.js" defer></script>
-    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -116,8 +113,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/footer/vertical-logo.svg" alt="logo: best tour plan" class="logo footer__logo">
-                <div class="footer__list footer__categories">
+                <a href="./" class="logo footer__logo" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/footer/vertical-logo.svg" alt="logo: best tour plan" class="logo">
+                </a>
+                <div class="footer__list footer__categories" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
                         <li class="footer__item">
@@ -154,7 +153,7 @@
 
                 </div>
                 <!-- /.footer__list -->
-                <div class="footer__list footer__additional">
+                <div class="footer__list footer__additional" data-aos="fade-up" data-aos-delay="400">
                     <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
                     <ul class="footer__ul">
                         <li class="footer__item">
@@ -188,7 +187,7 @@
 
                 </div>
                 <!-- /.footer__list -->
-                <div class="footer__social-network">
+                <div class="footer__social-network" data-aos="fade-up" data-aos-delay="700">
                     <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
                         <a href="#" class="footer__link">
@@ -204,7 +203,7 @@
                     <!-- /.footer__social-links -->
                 </div>
                 <!-- /.footer__social-network -->
-                <div class="footer__list footer__legal">
+                <div class="footer__list footer__legal" data-aos="fade-up" data-aos-delay="600">
                     <h3 class="footer__title">LEGAL INFORMATION</h3>
                     <ul class="footer__ul">
                         <li class="footer__item">
@@ -231,7 +230,7 @@
                     </ul>
                 </div>
                 <!-- /.footer__list -->
-                <div class="footer__contact-details">
+                <div class="footer__contact-details" data-aos="fade-up" data-aos-delay="800">
                     <h3 class="footer__title footer__title--mb-3 footer__title--details">Contact Details</h3>
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
                     <ul class="footer__ul">
@@ -247,26 +246,42 @@
                                     class="footer__icon">
                             </div>
                             <span class="footer__phonenumbers">
-                                Tel (business hours) : 269 1500 <br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                                Tel (business hours) : <a href="tel:2691500" class="footer__contact-link">269
+                                    1500</a><br>
+                                Tel (hotline) Monday - Saturday: <a href="tel:2691500"
+                                    class="footer__contact-link">52-56-61-38</a> (08:00 am – 20:00
+                                pm) <br>
+                                Tel (hotline) Sunday: <a href="tel:2691500" class="footer__contact-link">52-56-61-38</a>
+                                (08:00 am – 14:00 pm)
                             </span>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper footer__icon-wrapper--third">
                                 <img src="img/footer/email.svg" alt="icon: email" class="footer__icon">
                             </div>
-                            cherly.lawson@example.com
+                            <a href="mailto:cherly.lawson@example.com"
+                                class="footer__contact-link">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
-                <div class="footer__contact-form">
+                <div class="footer__contact-form" data-aos="fade-up" data-aos-delay="800">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer-block">
+                            <div class="footer__input-group">
+                                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name"
+                                    required minlength="2">
+                            </div>
+                            <!-- /.footer__input-group -->
+                            <div class="footer__input-group">
+                                <input type="tel" class="input footer__input phone-number" placeholder="Phone Number*"
+                                    name="phone" required minlength="18">
+                            </div>
+                            <!-- /.footer__input-group -->
+                        </div>
+                        <!-- /.footer-block -->
+                        <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -275,15 +290,15 @@
             <!-- /.footer-wrapper -->
             <div class="footer-bottom">
                 <ul class="footer__ul--horizontal footer__ul">
-                    <li class="footer__item">
+                    <li class="footer__item footer__item--small">
                         <a href="#" class="footer__link">Disclaimer
                         </a>
                     </li>
-                    <li class="footer__item">
+                    <li class="footer__item footer__item--small">
                         <a href="#" class="footer__link">Conditions of use
                         </a>
                     </li>
-                    <li class="footer__item">
+                    <li class="footer__item footer__item--small">
                         <a href="#" class="footer__link">Cancellation policy
                         </a>
                     </li>
@@ -295,6 +310,7 @@
             <!-- /.footer-bottom -->
         </div>
     </footer>
+    <!-- /.footer -->
 </body>
 
 </html>
