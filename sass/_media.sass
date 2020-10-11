@@ -29,6 +29,9 @@
 @media (max-width: 992px)
     .container
         max-width: 700px
+    .button
+        &:hover
+            background-color: $primary
     .newsletter-wrapper
         max-width: 700px
     .logo
@@ -47,9 +50,19 @@
             &__link
                 font-size: 12px
                 line-height: 15px
+                &:hover
+                    color: $light
     .search
         &__input
             width: 340px
+        &__button
+            &:hover
+                background-color: $primary
+    .breadcrumb
+        &-list
+            &__link
+                &:hover
+                    color: $text-color
     .hotel
         padding-bottom: 55px
         &-grid
@@ -63,10 +76,17 @@
     .booking
         width: 340px
         height: 210px
+        &__button
+            &:hover
+                background-color: $primary
     .map
         width: 340px
     .newsletter
         padding-top: 93px
+    .subscribe
+        &__button
+            &:hover
+                background-color: $primary
     .reviews
         &-slider
             &__item
@@ -88,6 +108,9 @@
         &__title
             &_two
                 max-width: 155px
+        &__button
+            &:hover
+                background-color: $primary
     .footer
         padding-top: 43px
         &-wrapper
@@ -164,6 +187,9 @@
         &__input
             &-group
                 flex-basis: 48%
+        &__link
+            &:hover
+                color: $footer-text-color
     .modal
         &__dialog
             max-width: 400px
